@@ -17,7 +17,7 @@ const Login: React.FC = () => {
     // Verificare che l'ambiente sia corretto
     const apiUrl = window.location.hostname === 'localhost' 
       ? 'http://localhost:5000/api' 
-      : 'https://ristorante-backend.onrender.com/api';
+      : 'https://template-ristoranti.onrender.com/api';
     console.log('Current API URL:', apiUrl);
   }, []);
 

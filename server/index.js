@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: '*',  // Allow any origin for now, replace with specific domains in production
+  origin: ['http://localhost:8080', 'http://localhost:8081', 'http://localhost:8082', 'https://elaborate-manatee-aa727b.netlify.app'],
   credentials: true
 }));
 app.use(express.json({ limit: '50mb' }));

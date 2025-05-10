@@ -19,4 +19,15 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      }
+    },
+    // Disattiva la modalità module script per evitare problemi MIME
+    modulePreload: false,
+    cssCodeSplit: true,
+    minify: true,
+  }
 }));

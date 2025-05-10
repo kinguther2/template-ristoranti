@@ -24,7 +24,7 @@ interface LanguageContextType {
 // API endpoints
 const API_URL = window.location.hostname === 'localhost' 
   ? 'http://localhost:5000/api' 
-  : 'https://ristorante-backend.onrender.com/api';
+  : 'https://template-ristoranti.onrender.com/api';
 console.log('Using API URL:', API_URL);
 const TRANSLATIONS_ENDPOINT = `${API_URL}/translations`;
 
